@@ -15,51 +15,55 @@ var import_jsx_runtime = require_jsx_runtime();
 var styles_default = "/assets/styles-Dn6wkM4j.css";
 var Sheet = Dialog;
 var SheetPortal = DialogPortal;
-var SheetOverlay = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogOverlay, {
+var SheetOverlay = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */(0, import_jsx_runtime.jsx)(DialogOverlay, {
 	className: cn("fixed inset-0 z-50 bg-scrim data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0", className),
 	...props,
 	ref
 }));
 SheetOverlay.displayName = DialogOverlay.displayName;
 var sheetVariants = cva("fixed z-50 gap-4 bg-background p-6 shadow-lg transition ease-in-out data-[state=closed]:duration-300 data-[state=open]:duration-500 data-[state=open]:animate-in data-[state=closed]:animate-out", {
-	variants: { side: {
-		top: "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
-		bottom: "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
-		left: "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm",
-		right: "inset-y-0 right-0 h-full w-3/4 border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm"
-	} },
+	variants: {
+		side: {
+			top: "inset-x-0 top-0 border-b data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top",
+			bottom: "inset-x-0 bottom-0 border-t data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom",
+			left: "inset-y-0 left-0 h-full w-3/4 border-r data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm",
+			right: "inset-y-0 right-0 h-full w-3/4 border-l data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm"
+		}
+	},
 	defaultVariants: { side: "right" }
 });
-var SheetContent = import_react.forwardRef(({ side = "right", className, children, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(SheetPortal, { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
-	ref,
-	className: cn(sheetVariants({ side }), className),
-	...props,
-	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogClose, {
-		className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background cursor-pointer transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary",
-		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "h-4 w-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-			className: "sr-only",
-			children: "Close"
-		})]
-	}), children]
-})] }));
+var SheetContent = import_react.forwardRef(({ side = "right", className, children, ...props }, ref) => /* @__PURE__ */(0, import_jsx_runtime.jsxs)(SheetPortal, {
+	children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetOverlay, {}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogContent, {
+		ref,
+		className: cn(sheetVariants({ side }), className),
+		...props,
+		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(DialogClose, {
+			className: "absolute right-4 top-4 rounded-sm opacity-70 ring-offset-background cursor-pointer transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:pointer-events-none data-[state=open]:bg-secondary",
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, { className: "h-4 w-4" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+				className: "sr-only",
+				children: "Close"
+			})]
+		}), children]
+	})]
+}));
 SheetContent.displayName = DialogContent.displayName;
-var SheetHeader = ({ className, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+var SheetHeader = ({ className, ...props }) => /* @__PURE__ */(0, import_jsx_runtime.jsx)("div", {
 	className: cn("flex flex-col space-y-2 text-center sm:text-left", className),
 	...props
 });
 SheetHeader.displayName = "SheetHeader";
-var SheetFooter = ({ className, ...props }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
+var SheetFooter = ({ className, ...props }) => /* @__PURE__ */(0, import_jsx_runtime.jsx)("div", {
 	className: cn("flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2", className),
 	...props
 });
 SheetFooter.displayName = "SheetFooter";
-var SheetTitle = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogTitle, {
+var SheetTitle = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */(0, import_jsx_runtime.jsx)(DialogTitle, {
 	ref,
 	className: cn("text-lg font-semibold text-foreground", className),
 	...props
 }));
 SheetTitle.displayName = DialogTitle.displayName;
-var SheetDescription = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(DialogDescription, {
+var SheetDescription = import_react.forwardRef(({ className, ...props }, ref) => /* @__PURE__ */(0, import_jsx_runtime.jsx)(DialogDescription, {
 	ref,
 	className: cn("text-sm text-muted-foreground", className),
 	...props
@@ -87,34 +91,34 @@ function CartContents({ compact = false }) {
 						className: "flex-1 min-w-0",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-primary text-sm font-medium",
-								children: product.name
-							}),
+							className: "text-primary text-sm font-medium",
+							children: product.name
+						}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-								className: "text-xs text-muted-foreground mt-2",
-								children: [
-									weightLabel(variant.weight),
-									" · ",
-									money(price)
-								]
-							}),
+							className: "text-xs text-muted-foreground mt-2",
+							children: [
+								weightLabel(variant.weight),
+								" · ",
+								money(price)
+							]
+						}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "flex justify-between items-center mt-3",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Quantity, {
-									value: item.quantity,
-									change: (n) => cart.update(variant.id, n)
-								}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-									variant: "ghost",
-									size: "icon",
-									"aria-label": `حذف ${product.name}`,
-									onClick: () => cart.update(variant.id, 0),
-									children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Trash2, { size: 16 })
-								})]
-							}),
+							className: "flex justify-between items-center mt-3",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Quantity, {
+								value: item.quantity,
+								change: (n) => cart.update(variant.id, n)
+							}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+								variant: "ghost",
+								size: "icon",
+								"aria-label": `حذف ${product.name}`,
+								onClick: () => cart.update(variant.id, 0),
+								children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Trash2, { size: 16 })
+							})]
+						}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-								className: "text-sm text-coffee mt-3",
-								children: money(price * item.quantity)
-							})
+							className: "text-sm text-coffee mt-3",
+							children: money(price * item.quantity)
+						})
 						]
 					})]
 				}, variant.id);
@@ -123,46 +127,46 @@ function CartContents({ compact = false }) {
 			className: "pt-6",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "flex justify-between mb-5",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "جمع سبد خرید" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-						className: "text-coffee font-medium",
-						children: money(cart.total)
-					})]
-				}),
+				className: "flex justify-between mb-5",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "جمع سبد خرید" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+					className: "text-coffee font-medium",
+					children: money(cart.total)
+				})]
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "text-xs leading-7 text-primary mb-5",
-					children: "ارسال سفارش رایگان است."
-				}),
+				className: "text-xs leading-7 text-primary mb-5",
+				children: "ارسال سفارش رایگان است."
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-					asChild: true,
-					className: "w-full h-11",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
-						to: "/checkout",
-						onClick: () => cart.setOpen(false),
-						children: ["ادامه سفارش", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, {})]
-					})
+				asChild: true,
+				className: "w-full h-11",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Link, {
+					to: "/checkout",
+					onClick: () => cart.setOpen(false),
+					children: ["ادامه سفارش", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, {})]
 				})
+			})
 			]
 		})]
 	}) : /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 		className: "py-20 text-center",
 		children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShoppingBag, {
-				className: "mx-auto size-10 text-primary mb-6",
-				strokeWidth: 1
-			}),
+			className: "mx-auto size-10 text-primary mb-6",
+			strokeWidth: 1
+		}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-				className: "text-xl mb-4",
-				children: "سبد خرید شما خالی است"
-			}),
+			className: "text-xl mb-4",
+			children: "سبد خرید شما خالی است"
+		}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-				asChild: true,
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-					href: "/#coffee",
-					onClick: () => cart.setOpen(false),
-					children: ["انتخاب قهوه", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, {})]
-				})
+			asChild: true,
+			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+				href: "/#coffee",
+				onClick: () => cart.setOpen(false),
+				children: ["انتخاب قهوه", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, {})]
 			})
+		})
 		]
 	});
 }
@@ -177,17 +181,17 @@ function CartDrawer() {
 			dir: "rtl",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetTitle, {
-					className: "text-right mt-4",
-					children: "سبد خرید شما"
-				}),
+				className: "text-right mt-4",
+				children: "سبد خرید شما"
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)(SheetDescription, {
-					className: "text-right",
-					children: "انتخاب‌های شما از Cousinroast"
-				}),
+				className: "text-right",
+				children: "انتخاب‌های شما از Cousinroast"
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "flex-1 overflow-y-auto mt-3",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CartContents, { compact: true })
-				})
+				className: "flex-1 overflow-y-auto mt-3",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(CartContents, { compact: true })
+			})
 			]
 		})
 	});
@@ -220,7 +224,8 @@ function Wordmark() {
 function Header() {
 	const cart = useCart();
 	const [menu, setMenu] = (0, import_react.useState)(false);
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, {
+		children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
 			className: "welcome-strip",
 			children: "به فروشگاه خودتون خیلی خوش اومدید!"
@@ -231,58 +236,58 @@ function Header() {
 				className: "container-brand h-22 flex items-center justify-between gap-4",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/",
-						className: "text-primary",
-						"aria-label": "Cousinroast خانه",
-						children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Wordmark, {})
-					}),
+					to: "/",
+					className: "text-primary",
+					"aria-label": "Cousinroast خانه",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Wordmark, {})
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
-						className: "hidden md:flex items-center gap-8",
-						children: nav.map((n) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: n.href,
-							className: "nav-link text-foreground",
-							children: n.label
-						}, n.href))
-					}),
+					className: "hidden md:flex items-center gap-8",
+					children: nav.map((n) => /* @__PURE__ */(0, import_jsx_runtime.jsx)("a", {
+						href: n.href,
+						className: "nav-link text-foreground",
+						children: n.label
+					}, n.href))
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "flex items-center gap-3",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
-							variant: "ghost",
-							className: "gap-2",
-							"aria-label": "باز کردن سبد خرید",
-							onClick: () => cart.setOpen(true),
-							children: [
+					className: "flex items-center gap-3",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)(Button, {
+						variant: "ghost",
+						className: "gap-2",
+						"aria-label": "باز کردن سبد خرید",
+						onClick: () => cart.setOpen(true),
+						children: [
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ShoppingBag, {
-									className: "size-5!",
-									strokeWidth: 1.5
-								}),
+							className: "size-5!",
+							strokeWidth: 1.5
+						}),
 								/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-									className: "hidden sm:inline text-xs",
-									children: "سبد خرید"
-								}),
-								cart.count > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
-									className: "text-primary text-xs",
-									children: [
-										"(",
-										number(cart.count),
-										")"
-									]
-								})
-							]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-							variant: "ghost",
-							size: "icon",
-							className: "md:hidden",
-							"aria-label": "فهرست",
-							"aria-expanded": menu,
-							onClick: () => setMenu(!menu),
-							children: menu ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {})
-						})]
-					})
+							className: "hidden sm:inline text-xs",
+							children: "سبد خرید"
+						}),
+							cart.count > 0 && /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+								className: "text-primary text-xs",
+								children: [
+									"(",
+									number(cart.count),
+									")"
+								]
+							})
+						]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+						variant: "ghost",
+						size: "icon",
+						className: "md:hidden",
+						"aria-label": "فهرست",
+						"aria-expanded": menu,
+						onClick: () => setMenu(!menu),
+						children: menu ? /* @__PURE__ */ (0, import_jsx_runtime.jsx)(X, {}) : /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Menu, {})
+					})]
+				})
 				]
 			}), menu && /* @__PURE__ */ (0, import_jsx_runtime.jsx)("nav", {
 				className: "md:hidden container-brand pb-5 flex flex-col",
-				children: nav.map((n) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+				children: nav.map((n) => /* @__PURE__ */(0, import_jsx_runtime.jsx)("a", {
 					className: "py-3 border-t border-border text-sm",
 					href: n.href,
 					onClick: () => setMenu(false),
@@ -291,49 +296,52 @@ function Header() {
 			})]
 		}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CartDrawer, {})
-	] });
+		]
+	});
 }
 function Footer() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("footer", {
 		className: "site-footer pt-10 pb-6",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "container-brand footer-inner",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-				to: "/",
-				className: "inline-block",
-				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Wordmark, {})
-			}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-				className: "text-sm leading-8 mt-4 text-foreground/70",
-				children: "یک انتخاب خوب، یک فنجان خوب."
-			})] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/",
+					className: "inline-block",
+					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Wordmark, {})
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+					className: "text-sm leading-8 mt-4 text-foreground/70",
+					children: "حال خوب از شما، قهوه از ما"
+				})]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "space-y-4",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h3", {
-						className: "text-sm text-primary",
-						children: "در ارتباط باشیم"
-					}),
+					className: "text-sm text-primary",
+					children: "در ارتباط باشیم"
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "mailto:commercial@orasiatrade.com?subject=Cousinroast",
-						className: "flex items-center gap-3",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 16 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							dir: "ltr",
-							className: "footer-contact",
-							children: "commercial@orasiatrade.com"
-						})]
-					}),
+					href: "mailto:sales@cousinroast.com?subject=Cousinroast",
+					className: "flex items-center gap-3",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 16 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						dir: "ltr",
+						className: "footer-contact",
+						children: "sales@cousinroast.com"
+					})]
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-						href: "tel:+982126761176",
-						className: "flex items-center gap-3",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, { size: 16 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							dir: "ltr",
-							className: "footer-contact",
-							children: "+98 21 2676 1176"
-						})]
-					}),
+					href: "tel:+982126761176",
+					className: "flex items-center gap-3",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Phone, { size: 16 }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
+						dir: "ltr",
+						className: "footer-contact",
+						children: "+98 21 2676 1176"
+					})]
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						className: "flex items-center gap-3 text-xs",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, { size: 15 }), "ایران، تهران، سعادت‌آباد"]
-					})
+					className: "flex items-center gap-3 text-xs",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(MapPin, { size: 15 }), "ایران، تهران، سعادت‌آباد"]
+				})
 				]
 			})]
 		}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -387,25 +395,25 @@ function NotFoundComponent() {
 			className: "max-w-md text-center",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-					className: "text-7xl font-bold text-foreground",
-					children: "404"
-				}),
+				className: "text-7xl font-bold text-foreground",
+				children: "404"
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h2", {
-					className: "mt-4 text-xl font-semibold text-foreground",
-					children: "Page not found"
-				}),
+				className: "mt-4 text-xl font-semibold text-foreground",
+				children: "Page not found"
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-2 text-sm text-muted-foreground",
-					children: "The page you're looking for doesn't exist or has been moved."
-				}),
+				className: "mt-2 text-sm text-muted-foreground",
+				children: "The page you're looking for doesn't exist or has been moved."
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("div", {
-					className: "mt-6",
-					children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
-						to: "/",
-						className: "inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",
-						children: "Go home"
-					})
+				className: "mt-6",
+				children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Link, {
+					to: "/",
+					className: "inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",
+					children: "Go home"
 				})
+			})
 			]
 		})
 	});
@@ -422,28 +430,28 @@ function ErrorComponent({ error, reset }) {
 			className: "max-w-md text-center",
 			children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
-					className: "text-xl font-semibold tracking-tight text-foreground",
-					children: "This page didn't load"
-				}),
+				className: "text-xl font-semibold tracking-tight text-foreground",
+				children: "This page didn't load"
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "mt-2 text-sm text-muted-foreground",
-					children: "Something went wrong on our end. You can try refreshing or head back home."
-				}),
+				className: "mt-2 text-sm text-muted-foreground",
+				children: "Something went wrong on our end. You can try refreshing or head back home."
+			}),
 				/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-					className: "mt-6 flex flex-wrap justify-center gap-2",
-					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
-						onClick: () => {
-							router.invalidate();
-							reset();
-						},
-						className: "inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",
-						children: "Try again"
-					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-						href: "/",
-						className: "inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent",
-						children: "Go home"
-					})]
-				})
+				className: "mt-6 flex flex-wrap justify-center gap-2",
+				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Button, {
+					onClick: () => {
+						router.invalidate();
+						reset();
+					},
+					className: "inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90",
+					children: "Try again"
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+					href: "/",
+					className: "inline-flex items-center justify-center rounded-md border border-input bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent",
+					children: "Go home"
+				})]
+			})
 			]
 		})
 	});
@@ -506,11 +514,13 @@ function RootComponent() {
 	const { queryClient } = Route$9.useRouteContext();
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(QueryClientProvider, {
 		client: queryClient,
-		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CartProvider, { children: [
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(CartProvider, {
+			children: [
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Header, {}),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)("main", { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Outlet, {}) }),
 			/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Footer, {})
-		] })
+			]
+		})
 	});
 }
 var $$splitComponentImporter$8 = () => import("./routes-e6JHnztP.mjs");

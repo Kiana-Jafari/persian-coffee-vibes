@@ -40,7 +40,7 @@ var products = [
 		name: "۱۰۰٪ عربیکا اتیوپی",
 		subtitle: "100% Arabica · Ethiopia",
 		origin: "اتیوپی",
-		description: "عربیکای خالص اتیوپی برای علاقه‌مندان به شخصیت عربیکا.",
+		description: "عربیکای خالص اتیوپی برای کسانی که علاقه دارند ترشی و در عین حال تلخی عربیکا رو تجربه کنن",
 		character: "عربیکای خالص",
 		use: "تجربه عربیکا",
 		image: coffee_ethiopia_default,
@@ -51,7 +51,7 @@ var products = [
 		name: "۱۰۰٪ روبوستا ویتنام",
 		subtitle: "100% Robusta · Vietnam",
 		origin: "ویتنام",
-		description: "روبوستای خالص ویتنام با بدنه قوی‌تر و کافئین بیشتر.",
+		description: "روبوستای خالص ویتنام با بادی قوی‌تر و کافئین بیشتر.",
 		character: "روبوستای خالص",
 		use: "بدنه بیشتر",
 		image: coffee_vietnam_blue_default,
@@ -84,29 +84,31 @@ var number = (n) => new Intl.NumberFormat("fa-IR").format(n);
 var money = (n) => `${number(n)} تومان`;
 var weightLabel = (weight) => weight === "1kg" ? "۱ کیلوگرم" : weight === "500g" ? "۵۰۰ گرم" : "۲۵۰ گرم";
 function metadata(title, description) {
-	return { meta: [
-		{ title: title.toLowerCase() === "cousinroast | کازین رست" ? title : `${title} | Cousinroast | کازین رست` },
-		{
-			name: "description",
-			content: description
-		},
-		{
-			property: "og:title",
-			content: `${title} | Cousinroast`
-		},
-		{
-			property: "og:description",
-			content: description
-		},
-		{
-			property: "og:type",
-			content: "website"
-		},
-		{
-			name: "twitter:card",
-			content: "summary_large_image"
-		}
-	] };
+	return {
+		meta: [
+			{ title: title.toLowerCase() === "cousinroast | کازین رست" ? title : `${title} | Cousinroast | کازین رست` },
+			{
+				name: "description",
+				content: description
+			},
+			{
+				property: "og:title",
+				content: `${title} | Cousinroast`
+			},
+			{
+				property: "og:description",
+				content: description
+			},
+			{
+				property: "og:type",
+				content: "website"
+			},
+			{
+				name: "twitter:card",
+				content: "summary_large_image"
+			}
+		]
+	};
 }
 var CartContext = (0, import_react.createContext)(null);
 function resolveItem(item) {
@@ -129,7 +131,7 @@ function CartProvider({ children }) {
 			if (Array.isArray(saved)) setItems(saved.filter((i) => resolveItem(i) && Number.isInteger(i.quantity) && i.quantity > 0 && i.quantity <= 99));
 			const preview = JSON.parse(sessionStorage.getItem("cousinroast-preview") || "null");
 			if (preview?.customer && Array.isArray(preview.items)) setOrder(preview);
-		} catch {}
+		} catch { }
 		setReady(true);
 	}, []);
 	(0, import_react.useEffect)(() => {

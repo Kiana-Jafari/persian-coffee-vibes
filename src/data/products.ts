@@ -10,8 +10,8 @@ const variants = (id: string, price: number): Variant[] => [
     { id: `${id}-1kg`, weight: '1kg', price, available: true, stock: null },
 ];
 export const products: Product[] = [
-    { id: 'ethiopia', name: '۱۰۰٪ عربیکا اتیوپی', subtitle: '100% Arabica · Ethiopia', origin: 'اتیوپی', description: 'عربیکای خالص اتیوپی برای علاقه‌مندان به شخصیت عربیکا.', character: 'عربیکای خالص', use: 'تجربه عربیکا', image: ethiopia, variants: variants('ethiopia', 3900000) },
-    { id: 'vietnam', name: '۱۰۰٪ روبوستا ویتنام', subtitle: '100% Robusta · Vietnam', origin: 'ویتنام', description: 'روبوستای خالص ویتنام با بدنه قوی‌تر و کافئین بیشتر.', character: 'روبوستای خالص', use: 'بدنه بیشتر', image: vietnam, variants: variants('vietnam', 2900000) },
+    { id: 'ethiopia', name: '۱۰۰٪ عربیکا اتیوپی', subtitle: '100% Arabica · Ethiopia', origin: 'اتیوپی', description: 'عربیکای خالص اتیوپی برای کسانی که علاقه دارند ترشی و در عین حال تلخی عربیکا رو تجربه کنن', character: 'عربیکای خالص', use: 'تجربه عربیکا', image: ethiopia, variants: variants('ethiopia', 3900000) },
+    { id: 'vietnam', name: '۱۰۰٪ روبوستا ویتنام', subtitle: '100% Robusta · Vietnam', origin: 'ویتنام', description: 'روبوستای خالص ویتنام با بادی قوی‌تر و کافئین بیشتر.', character: 'روبوستای خالص', use: 'بدنه بیشتر', image: vietnam, variants: variants('vietnam', 2900000) },
     { id: '70-30', name: '۷۰ / ۳۰', subtitle: '70% Arabica · 30% Robusta', origin: 'ترکیب بر پایه عربیکا', description: 'سهم بیشتر عربیکا؛ با عطری دلنشین و تعادلی نرم.', character: 'عربیکای بیشتر', use: 'عطر و تعادل', image: blend70, variants: variants('70-30', 3570000) },
     { id: '50-50', name: '۵۰ / ۵۰', subtitle: '50% Arabica · 50% Robusta', origin: 'ترکیب عربیکا و روبوستا', description: 'ترکیبی متعادل برای فنجان روزمره و اسپرسو.', character: 'متعادل و پر‌بدنه', use: 'اسپرسوی روزمره', image: blend50, variants: variants('50-50', 3350000) },
 ];
