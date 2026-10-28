@@ -4,7 +4,7 @@ import { t as ProductGrid } from "./products-Dm_kZwNA.mjs";
 //#region node_modules/.nitro/vite/services/ssr/assets/routes-GWZTtDBR.js
 var import_jsx_runtime = require_jsx_runtime();
 var hero_default = "/assets/hero-XWtNQ0yn.webp";
-var contactEmail = "sales@cousinroast.com";
+var contactEmail = "sales@cousinroast.shop";
 function Hero() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("section", {
 		className: "hero",
@@ -20,31 +20,33 @@ function Hero() {
 			children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "hero-copy",
 				children: [
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("h1", {
+					children: [
 						"قهوه‌ای که بر اساس ",
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", {}),
 						"ذائقه شما رست شده"
-					] }),
+					]
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
-						className: "hero-description",
-						children: [
-							"چه برای اسپرسو، چه برای شروع روز؛",
+					className: "hero-description",
+					children: [
+						"چه برای اسپرسو، چه برای شروع روز؛",
 							/* @__PURE__ */ (0, import_jsx_runtime.jsx)("br", { className: "desktop-break" }),
-							" ترکیب مناسب خودت رو از میان دانه‌های Cousinroast انتخاب کن."
-						]
-					}),
+						" ترکیب مناسب خودت رو از میان دانه‌های Cousinroast انتخاب کن."
+					]
+				}),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-						className: "hero-actions",
-						children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
-							href: "#coffee",
-							className: "hero-button hero-button-primary",
-							children: ["مشاهده قهوه‌ها ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { size: 17 })]
-						}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-							href: "#about",
-							className: "hero-button hero-button-secondary",
-							children: "داستان ما"
-						})]
-					})
+					className: "hero-actions",
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
+						href: "#coffee",
+						className: "hero-button hero-button-primary",
+						children: ["مشاهده قهوه‌ها ", /* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { size: 17 })]
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+						href: "#about",
+						className: "hero-button hero-button-secondary",
+						children: "داستان ما"
+					})]
+				})
 				]
 			})
 		})]
@@ -76,19 +78,21 @@ function Values() {
 					title: "پشتیبانی مستقیم",
 					sub: "پاسخ‌گوی پرسش‌های شما"
 				}
-			].map(({ Icon, title, sub }) => /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+			].map(({ Icon, title, sub }) => /* @__PURE__ */(0, import_jsx_runtime.jsxs)("div", {
 				className: "value-item",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Icon, {
 					size: 25,
 					strokeWidth: 1.3,
 					className: "text-primary shrink-0"
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "value-title",
-					children: title
-				}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
-					className: "value-subtitle",
-					children: sub
-				})] })]
+				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+					children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "value-title",
+						children: title
+					}), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
+						className: "value-subtitle",
+						children: sub
+					})]
+				})]
 			}, title))
 		})
 	});
@@ -99,7 +103,8 @@ function CatalogSection() {
 		className: "container-brand section-space catalog-section",
 		children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "catalog-heading",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 					className: "eyebrow",
 					children: "انتخاب شما"
@@ -112,7 +117,8 @@ function CatalogSection() {
 					className: "catalog-intro",
 					children: "چهار ترکیب در سه بسته‌بندی با اندازه‌ های مختلف"
 				})
-			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("span", {
 				className: "catalog-stamp",
 				children: [
 					"ROASTED",
@@ -129,7 +135,8 @@ function AboutBand() {
 		className: "about-band",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "container-brand about-inner",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("h1", {
 					className: "eyebrow",
 					children: "داستان ما"
@@ -142,16 +149,19 @@ function AboutBand() {
 					className: "about-signature",
 					children: "Cousinroast، برندی زیرمجموعه‌ی Orasia Holding"
 				})
-			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "about-copy",
 				children: [
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "داستان کازین رست از تجربه‌ی فروش داخلی قهوه در اوراسیا شروع شد؛ از یک تیم جوان و باانگیزه که قدم‌به‌قدم در بازارهای محلی یاد گرفت کیفیت واقعی فقط به خود محصول محدود نیست. کیفیت یعنی شناخت سلیقه‌ی آدم‌ها، توجه به نیازشان و پیدا کردن قهوه‌ای که با لحظه‌ها و عادت‌های روزمره‌شان جور دربیاید." }),
 					/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", { children: "این شناخت با حضور مستقیم اعضای تیم در بازار شکل گرفت؛ از بازاریابی و فروش تا همراهی مشتری‌ها و شنیدن بازخوردشان. برای ما، انتخاب هر دانه و هر ترکیب بخشی از همین مسیر یادگیری است: به‌جای اینکه قهوه را فقط یک کالا ببینیم، به تجربه‌ای فکر می‌کنیم که قرار است در فنجان شما ساخته شود." }),
-					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", { children: [
+					/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("p", {
+					children: [
 						"کازین رست، زیرمجموعه‌ی ",
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("strong", { children: "Orasia Holding" }),
 						"، با همین نگاه تلاش می‌کند ترکیب‌هایی با هویت روشن و کیفیت قابل‌اعتماد ارائه کند؛ از عربیکای خالص تا ترکیب های منحصربه فرد شما. هدف ما ساده است: تأمین قهوه ای که حال خوب برای شما به ارمغان می آورد"
-					] })
+					]
+				})
 				]
 			})]
 		})
@@ -163,7 +173,8 @@ function ContactSection() {
 		className: "contact-band",
 		children: /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 			className: "container-brand contact-inner",
-			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", { children: [
+			children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				children: [
 				/* @__PURE__ */ (0, import_jsx_runtime.jsx)("p", {
 					className: "eyebrow",
 					children: "در ارتباط باشیم"
@@ -176,7 +187,8 @@ function ContactSection() {
 					className: "contact-copy",
 					children: "برای پرسش درباره‌ی محصولات، سفارش یا همکاری، از طریق ایمیل با تیم Cousinroast در ارتباط باشید."
 				})
-			] }), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
+				]
+			}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
 				className: "contact-methods",
 				children: [/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("a", {
 					className: "contact-email",
@@ -184,9 +196,9 @@ function ContactSection() {
 					children: [
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Mail, { size: 20 }),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", {
-							dir: "ltr",
-							children: contactEmail
-						}),
+						dir: "ltr",
+						children: contactEmail
+					}),
 						/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ArrowLeft, { size: 17 })
 					]
 				}), /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
@@ -199,26 +211,26 @@ function ContactSection() {
 						className: "contact-phone-list",
 						children: [
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "contact-phone-item",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "نمایندگی اهواز و جنوب کشور" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-									href: "tel:+989330439232",
-									children: "+98 933 043 9232"
-								})]
-							}),
+							className: "contact-phone-item",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "نمایندگی اهواز و جنوب کشور" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								href: "tel:+989330439232",
+								children: "+98 933 043 9232"
+							})]
+						}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "contact-phone-item",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "نمایندگی تهران و مازندران" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-									href: "tel:+989190466275",
-									children: "+98 919 046 6275"
-								})]
-							}),
+							className: "contact-phone-item",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "نمایندگی تهران و مازندران" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								href: "tel:+989190466275",
+								children: "+98 919 046 6275"
+							})]
+						}),
 							/* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {
-								className: "contact-phone-item",
-								children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "فروش و پشتیبانی" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
-									href: "tel:+989120517153",
-									children: "+98 912 051 7153"
-								})]
-							})
+							className: "contact-phone-item",
+							children: [/* @__PURE__ */ (0, import_jsx_runtime.jsx)("span", { children: "فروش و پشتیبانی" }), /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+								href: "tel:+989120517153",
+								children: "+98 912 051 7153"
+							})]
+						})
 						]
 					})]
 				})]
@@ -227,13 +239,15 @@ function ContactSection() {
 	});
 }
 function Index() {
-	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, { children: [
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)(import_jsx_runtime.Fragment, {
+		children: [
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Hero, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(Values, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(CatalogSection, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(AboutBand, {}),
 		/* @__PURE__ */ (0, import_jsx_runtime.jsx)(ContactSection, {})
-	] });
+		]
+	});
 }
 //#endregion
 export { Index as component };
