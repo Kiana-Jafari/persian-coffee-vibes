@@ -760,29 +760,18 @@ body::after {
     margin-bottom: 32px
 }
 
-
-
 .eyebrow {
-
-    font-size: 12px;
-
+    font-size: 16px;
+    font-weight: 600;
     color: var(--coffee);
-
-    margin-bottom: 9px
+    margin-bottom: 12px;
 }
-
-
 
 .section-heading {
-
-    font-size: 31px;
-
-    font-weight: 500;
-
-    line-height: 1.7
+    font-size: clamp(32px, 3vw, 42px);
+    font-weight: 600;
+    line-height: 1.6;
 }
-
-
 
 .catalog-intro {
 
@@ -1339,7 +1328,7 @@ body::after {
 
     .section-heading {
 
-        font-size: 26px
+        font-size: 30px
     }
 
 
@@ -1746,14 +1735,11 @@ body::after {
 
 
 .contact-inner {
-
     display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    gap: 32px
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
 }
 
 
@@ -1864,12 +1850,11 @@ body::after {
 
 
     .contact-inner {
-
-        align-items: flex-start;
-
+        display: flex;
         flex-direction: column;
-
-        gap: 22px
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
 
@@ -1958,7 +1943,11 @@ html {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 12px;
+}
+
+.contact-phone-list {
+    gap: 12px;
 }
 
 .contact-phones {
@@ -1995,6 +1984,19 @@ html {
 
 .contact-phone-list a:hover {
     color: #76694d;
+}
+
+.contact-phone-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    margin-bottom: 12px;
+}
+
+.contact-phone-item span {
+    font-size: 0.85rem;
+    color: #64705a;
 }
 
 @media (max-width: 600px) {

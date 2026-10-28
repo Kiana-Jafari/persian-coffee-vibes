@@ -4,13 +4,13 @@ import { n as require_jsx_runtime } from "../_libs/radix-ui__react-context+react
 import { l as Slot } from "../_libs/@radix-ui/react-dialog+[...].mjs";
 import { n as clsx, t as cva } from "../_libs/class-variance-authority+clsx.mjs";
 import { t as twMerge } from "../_libs/tailwind-merge.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/button-DjTWGvYk.js
+//#region node_modules/.nitro/vite/services/ssr/assets/button-Dqq508BR.js
 var import_react = /* @__PURE__ */ __toESM(require_react());
 var import_jsx_runtime = require_jsx_runtime();
-var coffee_50_50_brown_default = "/assets/coffee-50-50-brown-C9Fz3tnB.webp";
-var coffee_70_30_olive_default = "/assets/coffee-70-30-olive-BV13wBnh.webp";
-var coffee_ethiopia_default = "/assets/coffee-ethiopia-lhDVGg__.webp";
-var coffee_vietnam_blue_default = "/assets/coffee-vietnam-blue-mqO-cfGc.webp";
+var coffee_50_50_brown_default = "/assets/coffee-50-50-brown-Cv8gSzc8.webp";
+var coffee_70_30_olive_default = "/assets/coffee-70-30-olive-B8kRzVIb.webp";
+var coffee_ethiopia_default = "/assets/coffee-ethiopia-ESlbkz-r.webp";
+var coffee_vietnam_blue_default = "/assets/coffee-vietnam-blue-CDLiVTYa.webp";
 var variants = (id, price) => [
 	{
 		id: `${id}-250g`,
@@ -84,31 +84,29 @@ var number = (n) => new Intl.NumberFormat("fa-IR").format(n);
 var money = (n) => `${number(n)} تومان`;
 var weightLabel = (weight) => weight === "1kg" ? "۱ کیلوگرم" : weight === "500g" ? "۵۰۰ گرم" : "۲۵۰ گرم";
 function metadata(title, description) {
-	return {
-		meta: [
-			{ title: title.toLowerCase() === "cousinroast | کازین رست" ? title : `${title} | Cousinroast | کازین رست` },
-			{
-				name: "description",
-				content: description
-			},
-			{
-				property: "og:title",
-				content: `${title} | Cousinroast`
-			},
-			{
-				property: "og:description",
-				content: description
-			},
-			{
-				property: "og:type",
-				content: "website"
-			},
-			{
-				name: "twitter:card",
-				content: "summary_large_image"
-			}
-		]
-	};
+	return { meta: [
+		{ title: title.toLowerCase() === "cousinroast | کازین رست" ? title : `${title} | Cousinroast | کازین رست` },
+		{
+			name: "description",
+			content: description
+		},
+		{
+			property: "og:title",
+			content: `${title} | Cousinroast`
+		},
+		{
+			property: "og:description",
+			content: description
+		},
+		{
+			property: "og:type",
+			content: "website"
+		},
+		{
+			name: "twitter:card",
+			content: "summary_large_image"
+		}
+	] };
 }
 var CartContext = (0, import_react.createContext)(null);
 function resolveItem(item) {
@@ -131,7 +129,7 @@ function CartProvider({ children }) {
 			if (Array.isArray(saved)) setItems(saved.filter((i) => resolveItem(i) && Number.isInteger(i.quantity) && i.quantity > 0 && i.quantity <= 99));
 			const preview = JSON.parse(sessionStorage.getItem("cousinroast-preview") || "null");
 			if (preview?.customer && Array.isArray(preview.items)) setOrder(preview);
-		} catch { }
+		} catch {}
 		setReady(true);
 	}, []);
 	(0, import_react.useEffect)(() => {
